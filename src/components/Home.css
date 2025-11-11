@@ -1,0 +1,169 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.hero p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  color: white;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  color: #3b82f6;
+  margin-bottom: 5px;
+}
+
+.stat-card p {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.recent-crimes {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-crimes h3 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.crime-cards {
+  display: grid;
+  gap: 15px;
+}
+
+.crime-card {
+  background: #f9fafb;
+  border-left: 4px solid #3b82f6;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.crime-card:hover {
+  transform: translateX(5px);
+}
+
+.crime-type {
+  font-weight: bold;
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.crime-location {
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.crime-description {
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.crime-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-reported {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-under-investigation {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.no-crimes {
+  text-align: center;
+  color: #9ca3af;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+}
